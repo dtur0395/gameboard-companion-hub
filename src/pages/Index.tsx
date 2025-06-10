@@ -46,19 +46,19 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-teal-50">
+    <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-900 to-teal-800 text-white">
+      <div className="bg-yellow-400 text-black">
         <div className="container mx-auto px-6 py-16">
           <div className="max-w-4xl mx-auto text-center">
             <div className="text-6xl mb-6">🎲</div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Let's play (and learn): Programmatic Assessment
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8">
+            <p className="text-xl md:text-2xl text-gray-800 mb-8">
               Explore the ups and downs of transforming assessment at UNSW—beyond the gameboard
             </p>
-            <div className="text-sm text-blue-200">
+            <div className="text-sm text-gray-700">
               Future-Proofing Health Professions Education: A Programmatic Journey
             </div>
           </div>
@@ -78,22 +78,22 @@ const Index = () => {
           
           <div className="grid md:grid-cols-2 gap-6">
             {downloadResources.map((resource, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
+              <Card key={index} className="hover:shadow-lg transition-shadow duration-300 bg-green-50 border-green-200">
                 <CardHeader>
                   <div className="flex items-center gap-3">
-                    <div className="p-2 bg-blue-100 rounded-lg">
-                      <resource.icon className="w-6 h-6 text-blue-600" />
+                    <div className="p-2 bg-green-200 rounded-lg">
+                      <resource.icon className="w-6 h-6 text-green-800" />
                     </div>
                     <div>
-                      <CardTitle className="text-xl">{resource.title}</CardTitle>
-                      <CardDescription>{resource.description}</CardDescription>
+                      <CardTitle className="text-xl text-green-900">{resource.title}</CardTitle>
+                      <CardDescription className="text-green-700">{resource.description}</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-500">{resource.size}</span>
-                    <Button className="bg-blue-600 hover:bg-blue-700">
+                    <span className="text-sm text-green-600">{resource.size}</span>
+                    <Button className="bg-green-600 hover:bg-green-700 text-white">
                       <Download className="w-4 h-4 mr-2" />
                       {resource.action}
                     </Button>
@@ -106,17 +106,17 @@ const Index = () => {
 
         {/* A4 Handout */}
         <section className="mb-16">
-          <Card className="bg-green-50 border-green-200">
+          <Card className="bg-yellow-50 border-yellow-300">
             <CardHeader>
-              <CardTitle className="text-2xl flex items-center gap-3">
+              <CardTitle className="text-2xl flex items-center gap-3 text-yellow-900">
                 📝 One-page Summary (IMRaD Format)
               </CardTitle>
-              <CardDescription className="text-lg">
+              <CardDescription className="text-lg text-yellow-800">
                 This short summary outlines the rationale, approach, outcomes, and implications of our programmatic assessment journey. Suitable for research showcases, implementation planning, or follow-up with interested collaborators.
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <Button className="bg-green-600 hover:bg-green-700">
+              <Button className="bg-yellow-600 hover:bg-yellow-700 text-white">
                 <Download className="w-4 h-4 mr-2" />
                 Download IMRaD Handout (PDF)
               </Button>
@@ -135,13 +135,13 @@ const Index = () => {
           
           <div className="grid md:grid-cols-2 gap-6">
             {blogPosts.map((post, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
+              <Card key={index} className="hover:shadow-lg transition-shadow duration-300 bg-orange-50 border-orange-200">
                 <CardHeader>
-                  <CardTitle className="text-xl leading-tight">{post.title}</CardTitle>
-                  <CardDescription className="text-base">{post.description}</CardDescription>
+                  <CardTitle className="text-xl leading-tight text-orange-900">{post.title}</CardTitle>
+                  <CardDescription className="text-base text-orange-700">{post.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button variant="outline" className="w-full">
+                  <Button variant="outline" className="w-full border-orange-300 text-orange-800 hover:bg-orange-100">
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Read Blog Post
                   </Button>
@@ -153,22 +153,22 @@ const Index = () => {
 
         {/* PAL White Paper */}
         <section className="mb-16">
-          <Card className="bg-purple-50 border-purple-200">
+          <Card className="bg-blue-50 border-blue-200">
             <CardHeader>
-              <CardTitle className="text-2xl flex items-center gap-3">
+              <CardTitle className="text-2xl flex items-center gap-3 text-blue-900">
                 📘 UNSW's Programmatic Assessment Framework
               </CardTitle>
-              <CardDescription className="text-lg">
+              <CardDescription className="text-lg text-blue-800">
                 Learn more about our institution-wide approach to Programmatic Assessment for Learning (PAL), including key design principles, stakeholder strategies, and curriculum examples.
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="flex flex-wrap gap-3">
-                <Button className="bg-purple-600 hover:bg-purple-700">
+                <Button className="bg-blue-600 hover:bg-blue-700 text-white">
                   <BookOpen className="w-4 h-4 mr-2" />
                   Read the PAL White Paper
                 </Button>
-                <Button variant="outline">
+                <Button variant="outline" className="border-blue-300 text-blue-800 hover:bg-blue-100">
                   <ExternalLink className="w-4 h-4 mr-2" />
                   Explore Teaching Gateway Resources
                 </Button>
@@ -179,25 +179,25 @@ const Index = () => {
 
         {/* References */}
         <section className="mb-16">
-          <Card>
+          <Card className="bg-white border-gray-200">
             <CardHeader>
-              <CardTitle className="text-2xl flex items-center gap-3">
+              <CardTitle className="text-2xl flex items-center gap-3 text-gray-900">
                 📚 References (APA 7)
               </CardTitle>
-              <CardDescription>
+              <CardDescription className="text-gray-700">
                 Curated key readings that informed the design, implementation, and scholarship of this project.
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
                 {references.map((reference, index) => (
-                  <div key={index} className="p-4 bg-gray-50 rounded-lg">
-                    <p className="text-sm text-gray-700 leading-relaxed">{reference}</p>
+                  <div key={index} className="p-4 bg-green-50 rounded-lg border border-green-200">
+                    <p className="text-sm text-green-800 leading-relaxed">{reference}</p>
                   </div>
                 ))}
               </div>
               <div className="mt-6">
-                <Button variant="outline" className="w-full">
+                <Button variant="outline" className="w-full border-green-300 text-green-800 hover:bg-green-100">
                   <Download className="w-4 h-4 mr-2" />
                   Download Complete Reference List (PDF)
                 </Button>
@@ -208,22 +208,22 @@ const Index = () => {
 
         {/* Connect Section */}
         <section className="mb-16">
-          <Card className="bg-teal-50 border-teal-200">
+          <Card className="bg-yellow-50 border-yellow-300">
             <CardHeader className="text-center">
-              <CardTitle className="text-2xl flex items-center justify-center gap-3">
+              <CardTitle className="text-2xl flex items-center justify-center gap-3 text-yellow-900">
                 👋 Connect or Follow Up
               </CardTitle>
-              <CardDescription className="text-lg">
+              <CardDescription className="text-lg text-yellow-800">
                 Want to know more about piloting PAL in your context or exchanging implementation ideas? We'd love to hear from you.
               </CardDescription>
             </CardHeader>
             <CardContent className="text-center">
               <div className="flex flex-wrap gap-3 justify-center">
-                <Button className="bg-teal-600 hover:bg-teal-700">
+                <Button className="bg-yellow-600 hover:bg-yellow-700 text-white">
                   <Mail className="w-4 h-4 mr-2" />
                   Contact Us
                 </Button>
-                <Button variant="outline">
+                <Button variant="outline" className="border-yellow-300 text-yellow-800 hover:bg-yellow-100">
                   <Users className="w-4 h-4 mr-2" />
                   Expression of Interest Form
                 </Button>
