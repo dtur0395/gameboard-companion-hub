@@ -5,7 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base:'/gameboard-companion-hub/',
+  // Base path for GitHub Pages deployment
+  // Change 'readiness-radar-tool' to your actual repository name if different
+  base: mode === 'production' ? '/gameboard-companion-hub/' : '/',
   server: {
     host: "::",
     port: 8080,
