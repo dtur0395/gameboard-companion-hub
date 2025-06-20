@@ -11,7 +11,8 @@ const Index = () => {
       description: "High-resolution A0 poster (PDF)",
       icon: FileText,
       action: "Download PDF",
-      size: "2.4 MB"
+      size: "2.4 MB",
+      link: "https://unsw-my.sharepoint.com/:b:/g/personal/z3541122_ad_unsw_edu_au/ERqtfYg7ASlJqnMNlXfmrPkBrpj7tvTv_Q4on-cbEAKfbw?email=aylwin.sim%40unsw.edu.au&e=Gni7jb"
     },
     {
       title: "1-Slide Summary", 
