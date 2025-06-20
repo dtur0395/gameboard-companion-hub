@@ -12,14 +12,15 @@ const Index = () => {
       icon: FileText,
       action: "Download PDF",
       size: "2.4 MB",
-      link: "https://unsw-my.sharepoint.com/:b:/g/personal/z3541122_ad_unsw_edu_au/ERqtfYg7ASlJqnMNlXfmrPkBrpj7tvTv_Q4on-cbEAKfbw?email=aylwin.sim%40unsw.edu.au&e=Gni7jb"
+      url: "https://unsw-my.sharepoint.com/:b:/g/personal/z3541122_ad_unsw_edu_au/ERqtfYg7ASlJqnMNlXfmrPkBrpj7tvTv_Q4on-cbEAKfbw?email=aylwin.sim%40unsw.edu.au&e=Gni7jb"
     },
     {
       title: "1-Slide Summary", 
       description: "Visual overview for presentations (PDF)",
       icon: FileText,
       action: "Download PDF",
-      size: "1.1 MB"
+      size: "1.1 MB",
+      url: ""
     }
   ];
 
@@ -27,12 +28,22 @@ const Index = () => {
     {
       title: "Comparing Apples and Oranges: Transforming Assessment at UNSW",
       description: "Exploring the deeper 'why' of assessment reform in the age of AI and student overload",
-      link: "#"
+      url: "https://www.education.unsw.edu.au/news-events/news/comparing-apples-and-oranges-programmatic-assessment-learning"
     },
     {
       title: "Never Waste a Good Crisis: Why Higher Ed Must Rethink Assessment Now",
       description: "Substack reflection on fragmented systems and programmatic solutions",
-      link: "#"
+      url: "https://needednowlt.substack.com/p/never-waste-a-good-crisis-why-higher"
+    },
+    {
+      title: "Programmatic Assessment: Are we there yet?",
+      description: "description...",
+      url: "https://www.education.unsw.edu.au/news-events/news/programmatic-assessment-are-we-there-yet#:~:text=Programmatic%20assessment%20is%20a%20systematic%20approach%20wherein%20the,progress%20in%20developing%20key%20competency%20domains%20and%20capabilities"
+    },
+    {
+      title: "Programmatic Assessment as a road trip, some advice for the journey!",
+      description: "description...",
+      url: "https://www.herdsa.org.au/herdsa-connect/programmatic-assessment-road-trip-some-advice-journey"
     }
   ];
 
@@ -94,10 +105,15 @@ const Index = () => {
                 <CardContent>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-green-600">{resource.size}</span>
-                    <Button className="bg-green-600 hover:bg-green-700 text-white">
+                    <a
+                      href={resource.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white text-sm font-medium px-4 py-2 rounded-md transition"
+                    >
                       <Download className="w-4 h-4 mr-2" />
                       {resource.action}
-                    </Button>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
@@ -142,10 +158,15 @@ const Index = () => {
                   <CardDescription className="text-base text-orange-700">{post.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button variant="outline" className="w-full border-orange-300 text-orange-800 hover:bg-orange-100">
+                  <a
+                    href={post.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center w-full border border-orange-300 text-orange-800 hover:bg-orange-100 text-sm font-medium px-4 py-2 rounded-md transition"
+                  >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Read Blog Post
-                  </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}
@@ -165,14 +186,25 @@ const Index = () => {
             </CardHeader>
             <CardContent>
               <div className="flex flex-wrap gap-3">
-                <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                <a
+                  href="https://unsw-my.sharepoint.com/:b:/g/personal/z3541122_ad_unsw_edu_au/Ee3ASBhYh7NOiXsmcEixinwBV6TF83i_8nYvtzsmA4-Zwg?e=4WfPmU"  // Replace with actual URL
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-md transition"
+                >
                   <BookOpen className="w-4 h-4 mr-2" />
                   Read the PAL White Paper
-                </Button>
-                <Button variant="outline" className="border-blue-300 text-blue-800 hover:bg-blue-100">
+                </a>
+
+                <a
+                  href="https://www.teaching.unsw.edu.au/assessment-methods/programmatic-assessment-for-learning"  // Replace with actual URL
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center border border-blue-300 text-blue-800 hover:bg-blue-100 text-sm font-medium px-4 py-2 rounded-md transition"
+                >
                   <ExternalLink className="w-4 h-4 mr-2" />
                   Explore Teaching Gateway Resources
-                </Button>
+                </a>
               </div>
             </CardContent>
           </Card>
