@@ -11,7 +11,7 @@ const Index = () => {
       icon: FileText,
       action: "Download PDF",
       size: "2.4 MB",
-      url: "https://unsw-my.sharepoint.com/:b:/g/personal/z3541122_ad_unsw_edu_au/ERqtfYg7ASlJqnMNlXfmrPkBrpj7tvTv_Q4on-cbEAKfbw?email=aylwin.sim%40unsw.edu.au&e=Gni7jb"
+      url: "https://unsw-my.sharepoint.com/:b:/g/personal/z3541122_ad_unsw_edu_au/ERqtfYg7ASlJqnMNlXfmrPkBrpj7tvTv_Q4on-cbEAKfbw"
     },
     {
       title: "IMRaD One-Page Summary", 
@@ -19,7 +19,7 @@ const Index = () => {
       icon: FileText,
       action: "Download PDF",
       size: "0.8 MB",
-      url: ""
+      url: "https://unsw-my.sharepoint.com/:b:/g/personal/z3541122_ad_unsw_edu_au/EVOHEdloAWdEnz7v6wkYf6QBe7PLEohW_p3yiYlG3crCvg"
     }
   ];
 
