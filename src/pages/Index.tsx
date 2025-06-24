@@ -1,8 +1,7 @@
 
-import { Download, FileText, BookOpen, ExternalLink, Users, Mail } from "lucide-react";
+import { Download, FileText, BookOpen, ExternalLink, Users, Mail, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
   const downloadResources = [
@@ -15,11 +14,11 @@ const Index = () => {
       url: "https://unsw-my.sharepoint.com/:b:/g/personal/z3541122_ad_unsw_edu_au/ERqtfYg7ASlJqnMNlXfmrPkBrpj7tvTv_Q4on-cbEAKfbw?email=aylwin.sim%40unsw.edu.au&e=Gni7jb"
     },
     {
-      title: "1-Slide Summary", 
-      description: "Visual overview for presentations (PDF)",
+      title: "IMRaD One-Page Summary", 
+      description: "Explore the full story behind the gameboard (PDF)",
       icon: FileText,
       action: "Download PDF",
-      size: "1.1 MB",
+      size: "0.8 MB",
       url: ""
     }
   ];
@@ -27,34 +26,76 @@ const Index = () => {
   const blogPosts = [
     {
       title: "Comparing Apples and Oranges: Transforming Assessment at UNSW",
-      description: "Exploring the deeper 'why' of assessment reform in the age of AI and student overload",
+      description: "Unpacking the deeper 'why' behind programmatic assessment in an era of AI, overload, and misaligned expectations.",
       url: "https://www.education.unsw.edu.au/news-events/news/comparing-apples-and-oranges-programmatic-assessment-learning"
     },
     {
       title: "Never Waste a Good Crisis: Why Higher Ed Must Rethink Assessment Now",
-      description: "Substack reflection on fragmented systems and programmatic solutions",
+      description: "A call to reimagine assessment by addressing systemic fragmentation through programmatic, purpose-driven reform.",
       url: "https://needednowlt.substack.com/p/never-waste-a-good-crisis-why-higher"
     },
     {
       title: "Programmatic Assessment: Are we there yet?",
-      description: "description...",
+      description: "A reality check on progress, pitfalls and promise in embedding programmatic assessment across higher education.",
       url: "https://www.education.unsw.edu.au/news-events/news/programmatic-assessment-are-we-there-yet#:~:text=Programmatic%20assessment%20is%20a%20systematic%20approach%20wherein%20the,progress%20in%20developing%20key%20competency%20domains%20and%20capabilities"
     },
     {
-      title: "Programmatic Assessment as a road trip, some advice for the journey!",
-      description: "description...",
+      title: "Programmatic Assessment as a road trip — some advice for the journey!",
+      description: "Practical tips and insights for navigating the long and winding road of programmatic assessment implementation.",
       url: "https://www.herdsa.org.au/herdsa-connect/programmatic-assessment-road-trip-some-advice-journey"
     }
   ];
 
   const references = [
-    "Torre, D. M., & Schuwirth, L. W. T. (2025). Programmatic assessment: From concept to practice in health professions education. Medical Education, 59(2), 123-135.",
-    "Heeneman, S., Driessen, E., Durning, S. J., & Torre, D. M. (2021). Use of learning analytics in programmatic assessment: A systematic review. Academic Medicine, 96(6), 888-898.",
-    "Van der Vleuten, C. P., Schuwirth, L. W., Driessen, E. W., Dijkstra, J., Tigelaar, D., Baartman, L. K., & van Tartwijk, J. (2012). A model for programmatic assessment fit for purpose. Medical Teacher, 34(3), 205-214.",
-    "Colbert, C. Y., & Bierer, S. B. (2022). Programmatic assessment in graduate medical education: A systematic review. Academic Medicine, 97(8), 1217-1229.",
-    "Francis, R., Khanna, P., & Williams, B. (2025). Implementing programmatic assessment: Lessons from a health sciences faculty transformation. Assessment & Evaluation in Higher Education, 50(3), 456-472.",
-    "Khanna, P., Francis, R., Peterson, G., & Williams, B. (2021). Student perspectives on programmatic assessment implementation: A mixed-methods study. Medical Education Online, 26(1), 1-12.",
-    "UNSW Faculty of Medicine and Health. (2024). Programmatic Assessment for Learning (PAL) Framework: A white paper on institutional implementation. Sydney: University of New South Wales."
+    {
+      text: "Colbert, C. Y., & Bierer, S. B. (2022). The importance of professional development in a programmatic assessment system: One medical school's experience. Education Sciences, 12(3), 220.",
+      doi: "https://doi.org/10.3390/educsci12030220"
+    },
+    {
+      text: "Francis, N. J., Jones, S., & Smith, D. P. (2025). Generative AI in higher education: Balancing innovation and integrity. British Journal of Biomedical Science, 81, 14048.",
+      doi: "https://doi.org/10.3389/bjbs.2024.14048"
+    },
+    {
+      text: "Heeneman, S., de Jong, L. H., Dawson, L. J., Wilkinson, T. J., Ryan, A., Tait, G. R., … van der Vleuten, C. P. M. (2021). Ottawa 2020 consensus statement for programmatic assessment – 1. Agreement on the principles. Medical Teacher, 43(10), 1139–1148.",
+      doi: "https://doi.org/10.1080/0142159X.2021.1957088"
+    },
+    {
+      text: "Khanna, P., Roberts, C., & Lane, A. S. (2021). Designing health professional education curricula using systems thinking perspectives. BMC Medical Education, 21(1), Article 20.",
+      doi: "https://doi.org/10.1186/s12909-020-02442-5"
+    },
+    {
+      text: "Torre, D., & Schuwirth, L. (2025). Programmatic assessment for learning: A programmatically designed assessment for the purpose of learning: AMEE Guide No. 174. Medical Teacher, 47(6), 918–933.",
+      doi: "https://doi.org/10.1080/0142159X.2024.2409936"
+    },
+    {
+      text: "UNSW Programmatic Assessment Working Group. (2024). Programmatic assessment for learning: White paper on institutional implementation. University of New South Wales.",
+      doi: null
+    },
+    {
+      text: "van der Vleuten, C. P. M., Schuwirth, L. W. T., Driessen, E. W., Dijkstra, J., Tigelaar, D., Baartman, L. K. J., & van Tartwijk, J. (2012). A model for programmatic assessment fit for purpose. Medical Teacher, 34(3), 205–214.",
+      doi: "https://doi.org/10.3109/0142159X.2012.652239"
+    }
+  ];
+
+  const teamMembers = [
+    {
+      name: "A/Prof. Priya Khanna",
+      title: "Nexus Fellow, School of Clinical Medicine",
+      email: "priya.khanna@unsw.edu.au",
+      linkedin: "https://www.linkedin.com/in/drpriyakhanna/"
+    },
+    {
+      name: "Dr Daniela Castro de Jong",
+      title: "Nexus Fellow, School of Health Sciences",
+      email: "d.castro_de_jong@unsw.edu.au",
+      linkedin: null
+    },
+    {
+      name: "Ms Diana Saragi Turnip",
+      title: "Nexus Educational Developer",
+      email: "d.turnip@unsw.edu.au",
+      linkedin: "https://www.linkedin.com/in/diana-turnip-afhea-25969966"
+    }
   ];
 
   return (
@@ -79,12 +120,12 @@ const Index = () => {
 
       <div className="container mx-auto px-6 py-12 max-w-6xl">
         
-        {/* Poster & Slide Downloads */}
+        {/* Poster & IMRaD Downloads */}
         <section className="mb-16">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">📌 Download the Poster or 1-Slide Summary</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">📌 Download the Poster or IMRaD Summary</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Missed something from the board? Download a high-resolution version of the A0 poster, or grab a 1-slide visual overview for your next team meeting.
+              Missed something from the board? Download a high-resolution version of the A0 poster, or grab the comprehensive IMRaD summary for your research showcase.
             </p>
           </div>
           
@@ -119,26 +160,6 @@ const Index = () => {
               </Card>
             ))}
           </div>
-        </section>
-
-        {/* A4 Handout */}
-        <section className="mb-16">
-          <Card className="bg-yellow-50 border-yellow-300">
-            <CardHeader>
-              <CardTitle className="text-2xl flex items-center gap-3 text-yellow-900">
-                📝 One-page Summary (IMRaD Format)
-              </CardTitle>
-              <CardDescription className="text-lg text-yellow-800">
-                This short summary outlines the rationale, approach, outcomes, and implications of our programmatic assessment journey. Suitable for research showcases, implementation planning, or follow-up with interested collaborators.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Button className="bg-yellow-600 hover:bg-yellow-700 text-white">
-                <Download className="w-4 h-4 mr-2" />
-                Download IMRaD Handout (PDF)
-              </Button>
-            </CardContent>
-          </Card>
         </section>
 
         {/* Blog Posts */}
@@ -187,7 +208,7 @@ const Index = () => {
             <CardContent>
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="https://unsw-my.sharepoint.com/:b:/g/personal/z3541122_ad_unsw_edu_au/Ee3ASBhYh7NOiXsmcEixinwBV6TF83i_8nYvtzsmA4-Zwg?e=4WfPmU"  // Replace with actual URL
+                  href="https://unsw-my.sharepoint.com/:b:/g/personal/z3541122_ad_unsw_edu_au/Ee3ASBhYh7NOiXsmcEixinwBV6TF83i_8nYvtzsmA4-Zwg?e=4WfPmU"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-md transition"
@@ -197,7 +218,7 @@ const Index = () => {
                 </a>
 
                 <a
-                  href="https://www.teaching.unsw.edu.au/assessment-methods/programmatic-assessment-for-learning"  // Replace with actual URL
+                  href="https://www.teaching.unsw.edu.au/assessment-methods/programmatic-assessment-for-learning"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center border border-blue-300 text-blue-800 hover:bg-blue-100 text-sm font-medium px-4 py-2 rounded-md transition"
@@ -225,55 +246,77 @@ const Index = () => {
               <div className="space-y-4">
                 {references.map((reference, index) => (
                   <div key={index} className="p-4 bg-green-50 rounded-lg border border-green-200">
-                    <p className="text-sm text-green-800 leading-relaxed">{reference}</p>
+                    <p className="text-sm text-green-800 leading-relaxed">
+                      {reference.text}
+                      {reference.doi && (
+                        <>
+                          {" "}
+                          <a
+                            href={reference.doi}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-green-600 hover:text-green-800 underline"
+                          >
+                            {reference.doi}
+                          </a>
+                        </>
+                      )}
+                    </p>
                   </div>
                 ))}
-              </div>
-              <div className="mt-6">
-                <Button variant="outline" className="w-full border-green-300 text-green-800 hover:bg-green-100">
-                  <Download className="w-4 h-4 mr-2" />
-                  Download Complete Reference List (PDF)
-                </Button>
               </div>
             </CardContent>
           </Card>
         </section>
 
-        {/* Connect Section */}
+        {/* Contact Section */}
         <section className="mb-16">
           <Card className="bg-yellow-50 border-yellow-300">
             <CardHeader className="text-center">
               <CardTitle className="text-2xl flex items-center justify-center gap-3 text-yellow-900">
-                👋 Connect or Follow Up
+                💬 Let's Talk Programmatic Assessment
               </CardTitle>
               <CardDescription className="text-lg text-yellow-800">
-                Want to know more about piloting PAL in your context or exchanging implementation ideas? We'd love to hear from you.
+                Thinking about your next step? Reach out to continue the conversation.
               </CardDescription>
             </CardHeader>
-            <CardContent className="text-center">
-              <div className="flex flex-wrap gap-3 justify-center">
-                <Button className="bg-yellow-600 hover:bg-yellow-700 text-white">
-                  <Mail className="w-4 h-4 mr-2" />
-                  Contact Us
-                </Button>
-                <Button variant="outline" className="border-yellow-300 text-yellow-800 hover:bg-yellow-100">
-                  <Users className="w-4 h-4 mr-2" />
-                  Expression of Interest Form
-                </Button>
+            <CardContent>
+              <div className="grid md:grid-cols-3 gap-6">
+                {teamMembers.map((member, index) => (
+                  <div key={index} className="text-center p-4 bg-yellow-100 rounded-lg">
+                    <h3 className="font-semibold text-yellow-900 mb-2">{member.name}</h3>
+                    <p className="text-sm text-yellow-700 mb-3">{member.title}</p>
+                    <div className="space-y-2">
+                      <a
+                        href={`mailto:${member.email}`}
+                        className="inline-flex items-center text-yellow-800 hover:text-yellow-900 text-sm"
+                      >
+                        <Mail className="w-4 h-4 mr-1" />
+                        {member.email}
+                      </a>
+                      {member.linkedin && (
+                        <div>
+                          <a
+                            href={member.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center text-yellow-800 hover:text-yellow-900 text-sm"
+                          >
+                            <Linkedin className="w-4 h-4 mr-1" />
+                            LinkedIn
+                          </a>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="text-center mt-6 pt-4 border-t border-yellow-200">
+                <p className="text-yellow-800 font-medium">Faculty of Medicine and Health, UNSW Sydney</p>
               </div>
             </CardContent>
           </Card>
         </section>
-
-        {/* Footer */}
-        <footer className="text-center py-8 border-t border-gray-200">
-          <p className="text-gray-600 mb-2">
-            ANZAHPE 2025 Conference • UNSW Faculty of Medicine and Health
-          </p>
-          <p className="text-sm text-gray-500">
-            Programmatic Assessment for Learning (PAL) Implementation Project
-          </p>
-        </footer>
       </div>
     </div>
   );
