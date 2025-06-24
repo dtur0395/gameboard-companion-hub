@@ -11,7 +11,7 @@ const Index = () => {
       icon: FileText,
       action: "Download PDF",
       size: "2.4 MB",
-      url: "https://unsw-my.sharepoint.com/:b:/g/personal/z3541122_ad_unsw_edu_au/ERqtfYg7ASlJqnMNlXfmrPkBrpj7tvTv_Q4on-cbEAKfbw"
+      url: "https://acrobat.adobe.com/id/urn:aaid:sc:AP:73c31b9a-1b67-4c58-8e9b-4ef91d66438c"
     },
     {
       title: "IMRaD One-Page Summary", 
@@ -19,7 +19,7 @@ const Index = () => {
       icon: FileText,
       action: "Download PDF",
       size: "0.8 MB",
-      url: "https://unsw-my.sharepoint.com/:b:/g/personal/z3541122_ad_unsw_edu_au/EVOHEdloAWdEnz7v6wkYf6QBe7PLEohW_p3yiYlG3crCvg"
+      url: "https://acrobat.adobe.com/id/urn:aaid:sc:AP:b2243a26-275b-4143-9646-19a473a8ad7f"
     }
   ];
 
@@ -69,7 +69,7 @@ const Index = () => {
     },
     {
       text: "UNSW Programmatic Assessment Working Group. (2024). Programmatic assessment for learning: White paper on institutional implementation. University of New South Wales.",
-      doi: null
+      doi: "https://acrobat.adobe.com/id/urn:aaid:sc:AP:9b03c053-f4f0-4871-a970-2a6d39f8b583"
     },
     {
       text: "van der Vleuten, C. P. M., Schuwirth, L. W. T., Driessen, E. W., Dijkstra, J., Tigelaar, D., Baartman, L. K. J., & van Tartwijk, J. (2012). A model for programmatic assessment fit for purpose. Medical Teacher, 34(3), 205–214.",
